@@ -1,0 +1,247 @@
+.main-menu {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    padding: 15px 0;
+    z-index: 50;
+}
+
+.single-post-page .main-menu {
+    bottom: unset;
+    top: 0;
+}
+
+.main-menu ul {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu ul li {
+    color: white;
+    border-right: 1px solid #fff;
+}
+
+.main-menu ul li:last-child {
+    color: white;
+    border-right: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* html,
+body {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+} */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+.main-menu ul li a {
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 25px;
+    transition: all 0.2s ease;
+}
+
+.main-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-menu.sticky {
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+}
+
+main.single-post-content {
+    width: 100vw;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.top-row {
+    display: flex;
+}
+
+.top-row .horizontal-line-x {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.horizontal-line-x .line {
+    height: 1px;
+    width: 90%;
+    background-color: black;
+    margin: 0 20px;
+}
+
+/* .x-btn.x-btn-animated {
+    font-size: 70px;
+    font-weight: 100;
+    line-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15px;
+    background: none;
+    border: none;
+} */
+
+/* .x-btn.x-btn-animated:hover {
+    cursor: pointer;
+} */
+.close-btn-animated {
+    position: relative;
+    width: 50px;
+    right: -32px;
+}
+button.x-btn.x-btn-animated {
+    width: 50px;
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    color: transparent;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    left: 50%;
+    letter-spacing: 1.5px;
+    line-height: 50px;
+    outline: none;
+    overflow: hidden;
+    padding: 10px 0 0;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in;
+    width: 100px;
+  }
+  
+  button.x-btn.x-btn-animated::before,
+  button.x-btn.x-btn-animated::after {
+    background-color: black;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    transform-origin: center left;
+    transition: all 0.2s ease-in;
+    width: 141.4214px;
+    z-index: -1;
+  }
+  
+  button.x-btn.x-btn-animated::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  
+  button.x-btn.x-btn-animated::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+  
+  button.x-btn.x-btn-animated:hover {
+    color: #fff;
+  }
+  
+  button.x-btn.x-btn-animated:hover::before,
+  button.x-btn.x-btn-animated:hover::after {
+    height: 50px;
+    transform: rotate(0deg);
+  }
+
+.bottom-row {
+    display: flex;
+    width: 100%;
+}
+
+.bottom-row .col {
+    /* flex: 1; */
+    /* flex-shrink: 0; */
+    width: calc(100vw / 3);
+}
+
+.bottom-row .col.middle-col {
+    margin: 0 50px;
+    flex-shrink: 0;
+}
+
+.bottom-row .col img {
+    max-width: 100%;
+}
+
+.bottom-row .post-text {
+    font-size: 18px;
+}
+
+.line-title-block .block-label strong {
+    font-size: 20px;
+}
+
+.line-title-block .block-line-horizontal {
+    height: 1px;
+    background: black;
+    flex: 1;
+    margin-left: 20px;
+}
+.line-title-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+ul.crew-list {
+    list-style: none;
+    padding: 0;
+}
+
+ul.crew-list li {
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+
+/* FOOTER */
+footer#main-footer {
+    width: 100vw;
+    height: 15px;
+    background-color: #000;
+    position: fixed;
+    z-index: 49;
+    bottom: 0;
+}
